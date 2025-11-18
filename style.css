@@ -22,5 +22,6 @@ nav a {
 }
 /* Hover effect*/
 nav a:hover {
-  font-weight: 800;
+  font-weight: 1500;
+  text-decoration: underline;
 }
