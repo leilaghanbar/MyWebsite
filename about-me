@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - Leila Ghanbar</title>
+    <style>
+        body { font-family: Arial, san-serif; margin: 40px; background-color: #fafafa;}
+        nav a { margin: 10px; text-decoration: none; color: #0073e6; font-weight: bold;}
+        nav a:hover { text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me - Leila Ghanbar</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1> About Me </h1>
+    <p> I am an Associate Lecturer in Computer Scinece at Brunel University of London with a PhD in Computational Biology.</p>
+    <p> My teaching interetss includes Quantitative Data Analysis and Theroretical Concepts in Computation</p>
+    <p> I have also worked as a Teaching Assistant Manager in which I developed a semi-automatc allocation program</p> 
+</body>
+</html>
+
