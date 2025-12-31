@@ -8,15 +8,66 @@
   
   <nav>
         <a href="index.html">Home</a>
-        <a href="about-me.html">About Me</a>
-        <a href="teaching.html">Teaching</a>
+        <a href="about-me.html">Resume</a>
         <a href="contact.html">Contact</a>
+        <a href="student-reviews.html">Student Reviews</a>
+        <a href="teaching-portfolio.html">Teaching Portfolio</a>
+        <a href="teaching.html">Teaching Experience</a>
   </nav>
-  <div class="container">
+  <div class="container fade-in">
     <!-- Everything else on the page goes inside here -->
   <h1>Welcome to My Website</h1>
-  <p>Hello! I’m <b>Leila Ghanbar</b>, a lecturer in Computer Science at Brunel University London.</p>
+  <p>Hello! I’m <b>Leila Ghanbar</b>, an associate lecturer in Computer Science at Brunel University of London.</p>
   <p>This is my personal academic website, where I share my teaching work, projects, and academic interests.</p>
   </div>
+
+  <div class = "container fade-in">
+    <h1 id="profile"> Profile</h1>
+    <p>
+      With a background in biology and a master's degree in engineering, I am a Jack of all trades which is why I persued my PhD 
+      in computational biology to bridge the knowledge of biology to modelling, using my engineering mindset. I am creative and curious 
+      I keen to learn new things. To teach any subject, I first learn them myself and try different resources of this goal. This gives
+      me the oppotunity to be comfortable with different subjects, enough to teach them; and to find out which resources offer the 
+      best features for learning to the students. With this first-hand experience, I can offer my students a better tools for learning
+      and understanding the contents. 
+    </p>
+  </div>
+
+  <div class="container fade-in">
+    <h1 id="research"> Research Interets </h1>
+    <p>
+      I have a vast interest in different fields, some I have never had a chance to work in as a researcher and some I have delved into.
+    </p>
+    <ul>
+      <li> Modelling and Simulation of biological networks at a cellular and multi-cellular level. This aligned with my PhD perfectly. </li>
+      <li> Development of computational tools for model abstraction and simplification in biology. While modelling biological networks
+        in Petri nets for my PhD, I realied that there are no tools in the market that can satisfy my taste for modelling in detail. 
+        I have developed an idea of what this software needs to have and how it would look like and I would work on it with a PhD student.
+      </li>
+      <li>
+        Application of AI in Healthcare and Biology. It is a far topic from what I originally completed in my PhD, but it always 
+        interests me to enhance AI for purposes that matter. 
+      </li>
+      <li>
+        Automation and optimisation of academic workflows and teaching administration.
+        As a lecturer, I find marking is one of the least productive times of the year. Considering the advancement of AI, I am intersted
+        to create a safe AI tool that can mark the courseworks of the students effectively. This would save time that could be used for 
+        research purposes. 
+      </li>
+    </ul>
+  </div>
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appear = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        }
+    });
+    });
+
+    faders.forEach(el => appear.observe(el));
+    </script>
 </body>
 </html>
